@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Juego de memoria</h1>
+    <main class="container">
+        <div class="central-container">
+            <label for="dimension">Dimension</label>
+            <input id="dimension" type="number"  value="5" min="1" max="20">
+            <label for="boxes">Boxes</label>
+            <input id="boxes" type="number" value="2" min="1" max="10">
+            <label for="seconds">Seconds</label>
+            <input id="seconds" type="number">
+            <button id="generate-matrix">Play</button>
+            <p>Aciertos: <span id="rights-count">0</span></p>
+            <p>errores: <span id="fails-count">0</span></p>
+            <div id="game"></div>
+        </div>
+
+    </main>
+
+</body>
+</html>

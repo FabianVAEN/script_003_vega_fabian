@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.demo {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    background-color: rgb(243, 224, 248);
+    border-top-color: black;
+    border-color: black;
+    border: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transition: background-color 0.5s, transform 0.5s, box-shadow 0.30s, color 0.0s;
+}
+
+.content:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.10);
+}
+
+
+.control-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px ;
+    border-color: azure;
+}
+
+.highlight {
+    background-color: #09ff00 !important; 
+    box-shadow: 0 0 20px 5px rgba(0, 255, 85, 0.9);
+    transform: scale(1.1);
+}
+
+
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.puntaje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
