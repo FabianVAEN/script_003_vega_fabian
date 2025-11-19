@@ -5,13 +5,17 @@
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
+    background-color:#ffe5ec;
 }
 
+h1{
+    color: #fb6f92;
+}
 .demo {
     display: flex;
     gap: 15px;
     padding: 20px;
-    background-color: rgb(243, 224, 248);
+    background-color: #ffccd5;
     border-top-color: black;
     border-color: black;
     border: 1px;
@@ -76,4 +80,32 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.wrong {
+    background-color: #ff4e4e !important;
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8);
+    transform: scale(1.1);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.correct {
+    background-color: #a1c181 !important; 
+    box-shadow: 0 0 20px 5px rgba(88, 255, 11, 0.178);
+}
+
+#generate-matrix{
+    background-color: #fb6f92;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#generate-matrix:hover{
+    background-color: #f8819f;
 }

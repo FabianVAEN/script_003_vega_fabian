@@ -40,6 +40,10 @@ function createMatrix(dimension, container, boxes, seconds){
                         discovered.add(num)
                         rights++
                         document.getElementById("rights-count").textContent = rights
+                        content.classList.add("correct")
+                        setTimeout(()=>{
+                            content.classList.remove("correct")
+                        },600)
                     }
 
                     if (rights === pattern.length){
@@ -52,6 +56,10 @@ function createMatrix(dimension, container, boxes, seconds){
                 content.onclick = function(){
                     fails++
                     document.getElementById("fails-count").textContent = fails
+                    content.classList.add("wrong")
+                    setTimeout(()=>{
+                        content.classList.remove("wrong")
+                    },600)
                     console.log("Incorrecto")
                 }
             }
